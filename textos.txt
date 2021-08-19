@@ -1,0 +1,19 @@
+#FF9888
+
+Não tem balança em casa? A calculadora de medidas culinárias converte os valores das gramas ou ml das receitas em medidas de Copo Americano, Xícaras, Copo de Requeijão, Colher de Sopa, Colher de Sobremesa, Colher de chá e Colher de Café.
+
+Modo de usar:
+1- Selecione o ingrediente que deseja utilizar
+2- Escreva a quantidade de gramas ou ml a receita pede
+3 - Clique no botão de converter.
+
+Observações:
+. Os valores correspondem a medidas rasas, ao encher uma xícara, por exemplo, passe uma faca por cima.
+. Nem todos os ingredientes possuem todas as medidas correspondentes, mas estamos trabalhando para fornecer cada vez mais a informação mais completa possível.
+. Sentiu falta de algum ingrediente? Escreva sua sugestão:
+
+Você vai encontrar várias receitas no site www.aquidaminhacozinha.com.br
+
+Me siga no instagram 
+www.instagram.com/aquidaminhacozinha
+

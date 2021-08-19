@@ -1,0 +1,117 @@
+CORES
+----------------
+Logo - d54832
+
+laranja - FF9888
+laranja claro - FFD9D3
+bege - FBFBF3
+
+
+--------------
+FONTES
+--------------
+Título - Itim
+
+Corpo - Baloo Tammudu 2
+
+------------------
+TIPOS INGREDIENTE
+------------------
+Líquido
+
+Açucar
+Açucar impalpável
+Amido de milho
+Arroz
+Aveia
+Azeite
+Bicarbonato de sódio
+Canela em pó
+Castanha/Nozes/Amêndoa
+Chocolate em pó
+Coco ralado fresco
+Coco ralado seco
+Farinha de mandioca
+Farinha de trigo
+Fermento em pó
+Flocão
+Fubá
+Manteiga ou Gordura vegetal
+Mel
+Polvilho
+Liquido
+
+-----------
+CLASSES CSS
+-----------
+
+------------
+VARIAVEIS
+-------------
+copoAmericano
+xicara
+xicaraMeia
+xicaraTresQuartos
+xicaraUmQuarto
+copoRequeijao
+copoRequeijaoMeio
+copoRequeijaoTresQuartos
+copoRequeijaoUmQuarto
+colherSopa
+colherSobremesa
+colherCha
+colherCafe
+
+--------------
+ARRAY
+--------------
+copoAmericano, xicara, copoRequeijao, colherSopa, colherSobremesa, colherCha, colherCafe
+
+[0]copoAmericano
+[1]xicara
+[2]xicaraMeia
+[3]xicaraTresQuartos
+[4]xicaraUmQuarto
+[5]copoRequeijao
+[6]copoRequeijaoMeio
+[7]copoRequeijaoTresQuartos
+[8]copoRequeijaoUmQuarto
+[9]colherSopa
+[10]colherSobremesa
+[11]colherCha
+[12]colherCafe
+
+--------
+SITES COM MEDIDAS
+----------
+http://www.padeirito.com.br/blog/detalhe/34
+
+https://revistacasaejardim.globo.com/Casa-e-Comida/Receitas/noticia/2020/06/tabela-de-conversao-de-medidas-para-receitas.html
+
+105, 128, 0, 8, 5.2, 2.6, 0
+1
+3
+5
+7
+9
+11
+13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
