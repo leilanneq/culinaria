@@ -204,6 +204,8 @@ function metadeAmericano(inputIngrediente, valorG) {
         $('[data-metade-americano]').text("Meio copo americano")
         $("[data-linha-americano='mais']").removeClass("esconder-metades")
         $("[data-linha-americano='metades']").removeClass("esconder-metades")
+        $("[data-linha-americano='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-americano='ou']").removeClass("esconder-inteiros")
         
     } else if (indiceMetadeTrue === 1) {
         //mudar o valor para UmTerço
@@ -211,6 +213,8 @@ function metadeAmericano(inputIngrediente, valorG) {
         $('[data-metade-americano]').text("Um terço de copo americano")
         $("[data-linha-americano='mais']").removeClass("esconder-metades")
         $("[data-linha-americano='metades']").removeClass("esconder-metades")
+        $("[data-linha-americano='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-americano='ou']").removeClass("esconder-inteiros")
         
     } else if (indiceMetadeTrue === 2) {
         //mudar valor para UmQuarto
@@ -218,24 +222,37 @@ function metadeAmericano(inputIngrediente, valorG) {
         $('[data-metade-americano]').text("Um quarto de copo americano")
         $("[data-linha-americano='mais']").removeClass("esconder-metades")
         $("[data-linha-americano='metades']").removeClass("esconder-metades")
+        $("[data-linha-americano='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-americano='ou']").removeClass("esconder-inteiros")
         
     } else if (indiceMetadeTrue === 3) {
+        //mudar valor para TresQuartos
         $('[data-valor-metade-americano]').text("")//numero
         $('[data-metade-americano]').text("Um terço de copo americano")
         $("[data-linha-americano='mais']").removeClass("esconder-metades")
         $("[data-linha-americano='metades']").removeClass("esconder-metades")
+        $("[data-linha-americano='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-americano='ou']").removeClass("esconder-inteiros")
         
-        //mudar valor para TresQuartos
     } else {
         if (gRestanteX == 0) {
            $("[data-linha-americano='mais']").addClass("esconder-metades")
            $("[data-linha-americano='metades']").addClass("esconder-metades")
            
-        } else{
+        } else if ((gRestanteX != 0) && (ingredienteConvertido[0] == 0)) {
+            //esconder as gramas quando não tiver valor inteiro
+            $("[data-linha-americano='inteiro']").addClass("esconder-inteiros")
+            $("[data-linha-americano='ou']").addClass("esconder-inteiros")
+            $("[data-linha-americano='mais']").addClass("esconder-metades")
+           $("[data-linha-americano='metades']").addClass("esconder-metades")
+        }
+        else{
             $('[data-valor-metade-americano]').text(gRestanteX)
             $('[data-metade-americano]').text("gramas")
             $("[data-linha-americano='mais']").removeClass("esconder-metades")
             $("[data-linha-americano='metades']").removeClass("esconder-metades")
+            $("[data-linha-americano='inteiro']").removeClass("esconder-inteiros")
+            $("[data-linha-americano='ou']").removeClass("esconder-inteiros")
             
             //mostrar valores das gramas
         }
@@ -259,6 +276,8 @@ function metadeXicara(inputIngrediente, valorG) {
         $('[data-metade-xicara]').text("Meia xicara")
         $("[data-linha-xicara='mais']").removeClass("esconder-metades")
         $("[data-linha-xicara='metades']").removeClass("esconder-metades")
+        $("[data-linha-xicara='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-xicara='ou']").removeClass("esconder-inteiros")
         
     } else if (indiceMetadeTrue === 1) {
         //mudar o valor para UmTerço
@@ -266,6 +285,8 @@ function metadeXicara(inputIngrediente, valorG) {
         $('[data-metade-xicara]').text("Um terço de xicara")
         $("[data-linha-xicara='mais']").removeClass("esconder-metades")
         $("[data-linha-xicara='metades']").removeClass("esconder-metades")
+        $("[data-linha-xicara='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-xicara='ou']").removeClass("esconder-inteiros")
         
     } else if (indiceMetadeTrue === 2) {
         //mudar valor para UmQuarto
@@ -273,12 +294,16 @@ function metadeXicara(inputIngrediente, valorG) {
         $('[data-metade-xicara]').text("Um quarto de xicara")
         $("[data-linha-xicara='mais']").removeClass("esconder-metades")
         $("[data-linha-xicara='metades']").removeClass("esconder-metades")
+        $("[data-linha-xicara='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-xicara='ou']").removeClass("esconder-inteiros")
         
     } else if (indiceMetadeTrue === 3) {
         $('[data-valor-metade-xicara]').text("")
         $('[data-metade-xicara]').text("Um terço de xicara")
         $("[data-linha-xicara='mais']").removeClass("esconder-metades")
         $("[data-linha-xicara='metades']").removeClass("esconder-metades")
+        $("[data-linha-xicara='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-xicara='ou']").removeClass("esconder-inteiros")
         
         //mudar valor para TresQuartos
     } else {
@@ -286,11 +311,20 @@ function metadeXicara(inputIngrediente, valorG) {
             $("[data-linha-xicara='mais']").addClass("esconder-metades")
             $("[data-linha-xicara='metades']").addClass("esconder-metades")
             
-         } else{
+         } else if ((gRestanteX != 0) && (ingredienteConvertido[2] == 0)) {
+             //esconder as gramas quando não tiver valor inteiro
+            $("[data-linha-xicara='inteiro']").addClass("esconder-inteiros")
+            $("[data-linha-xicara='ou']").addClass("esconder-inteiros")
+            $("[data-linha-xicara='mais']").addClass("esconder-metades")
+           $("[data-linha-xicara='metades']").addClass("esconder-metades")
+         } 
+         else{
              $('[data-valor-metade-xicara]').text(gRestanteX)
              $('[data-metade-xicara]').text("gramas")
              $("[data-linha-xicara='mais']").removeClass("esconder-metades")
              $("[data-linha-xicara='metades']").removeClass("esconder-metades")
+             $("[data-linha-xicara='inteiro']").removeClass("esconder-inteiros")
+             $("[data-linha-xicara='ou']").removeClass("esconder-inteiros")
              
              //mostrar valores das gramas
          }
@@ -314,6 +348,9 @@ function metadeRequeijao(inputIngrediente, valorG) {
         $('[data-metade-requeijao]').text("Meio copo de requeijão")
         $("[data-linha-requeijao='mais']").removeClass("esconder-metades")
         $("[data-linha-requeijao='metades']").removeClass("esconder-metades")
+        $("[data-linha-requeijao='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-requeijao='ou']").removeClass("esconder-inteiros")
+             
         
     } else if (indiceMetadeTrue === 1) {
         //mudar o valor para UmTerço
@@ -321,6 +358,8 @@ function metadeRequeijao(inputIngrediente, valorG) {
         $('[data-metade-requeijao]').text("Um terço de copo de requeijão")
         $("[data-linha-requeijao='mais']").removeClass("esconder-metades")
         $("[data-linha-requeijao='metades']").removeClass("esconder-metades")
+        $("[data-linha-requeijao='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-requeijao='ou']").removeClass("esconder-inteiros")
         
     } else if (indiceMetadeTrue === 2) {
         //mudar valor para UmQuarto
@@ -328,12 +367,16 @@ function metadeRequeijao(inputIngrediente, valorG) {
         $('[data-metade-requeijao]').text("Um quarto de copo de requeijão")
         $("[data-linha-requeijao='mais']").removeClass("esconder-metades")
         $("[data-linha-requeijao='metades']").removeClass("esconder-metades")
+        $("[data-linha-requeijao='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-requeijao='ou']").removeClass("esconder-inteiros")
         
     } else if (indiceMetadeTrue === 3) {
         $('[data-valor-metade-requeijao]').text("")
         $('[data-metade-requeijao]').text("Um terço de copo de requeijão")
         $("[data-linha-requeijao='mais']").removeClass("esconder-metades")
         $("[data-linha-requeijao='metades']").removeClass("esconder-metades")
+        $("[data-linha-requeijao='inteiro']").removeClass("esconder-inteiros")
+        $("[data-linha-requeijao='ou']").removeClass("esconder-inteiros")
         
         //mudar valor para TresQuartos
     } else {
@@ -342,11 +385,18 @@ function metadeRequeijao(inputIngrediente, valorG) {
             $("[data-linha-requeijao='mais']").addClass("esconder-metades")
             $("[data-linha-requeijao='metades']").addClass("esconder-metades")
             
+         } else if ((gRestanteX != 0) && (ingredienteConvertido[4] == 0)) {
+            $("[data-linha-requeijao='inteiro']").addClass("esconder-inteiros")
+            $("[data-linha-requeijao='ou']").addClass("esconder-inteiros")
+            $("[data-linha-requeijao='mais']").addClass("esconder-metades")
+            $("[data-linha-requeijao='metades']").addClass("esconder-metades")
          } else{
              $('[data-valor-metade-requeijao]').text(gRestanteX)
              $('[data-metade-requeijao]').text("gramas")
              $("[data-linha-requeijao='mais']").removeClass("esconder-metades")
              $("[data-linha-requeijao='metades']").removeClass("esconder-metades")
+             $("[data-linha-requeijao='inteiro']").removeClass("esconder-inteiros")
+             $("[data-linha-requeijao='ou']").removeClass("esconder-inteiros")
              
              //mostrar valores das gramas
          }
