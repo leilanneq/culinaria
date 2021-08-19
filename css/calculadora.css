@@ -114,6 +114,9 @@ tr, th {
 .esconder-metades{
     display: none;
 }
+.esconder-inteiros {
+    display: none;
+}
 
 .informacao {
     width: 30%;
