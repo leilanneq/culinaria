@@ -4,6 +4,7 @@ import { metadeConvertidaAmericano, americanoComparaGramas, americanoPosicaoTrue
 import { metadeConvertidaRequeijao, requeijãoComparaGramas, RequeijaoPosicaoTrue } from "./metadeCopoRequeijao.js";
 //importar funções
 
+
 const botaoConverter = $('[data-botao-converter]')
 
 console.log(botaoConverter)
@@ -45,8 +46,8 @@ function conversor() {
         
     
     } else if (selectEscolhido == "aveia"){ //AVEIA
-        //[copoAmericano, 80, copoRequeijao, 5, colherSobremesa, 1.5, colherCafe]
-        let valorG = [0, 80, 0, 5, 0,	1.5, 0]
+        //[copoAmericano, 80, copoRequeijao, colherSopa, colherSobremesa, 1.5, colherCafe]
+        let valorG = [0, 80, 0, 7, 5,	1.5, 0]
         conversaoTela(inputIngrediente, valorG)
         //ingredienteConverter(inputIngrediente, valorG)
 
@@ -155,7 +156,7 @@ function conversor() {
         let valorG = [200, 150, 250, 15, 10, 5, 2.5]
         conversaoTela(inputIngrediente, valorG)
         // liquidoConverter(inputIngrediente)
-        //teste(inputIngrediente, valorG)        
+  
     }
 }
 

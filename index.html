@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet"  href="css/calculadora.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    
 </head>
 <body>
     <header class="cabecalho">
@@ -25,7 +27,7 @@
             <h2 class="ingrediente__titulo"></h2>
             <fieldset>
                 <label for="ingrediente" class="ingrediente__label">Ingrediente</label>
-                <select name="ingrediente" id="" class="ingrediente__select" data-select>
+                <select name="ingrediente" id="ingredientes" class="ingrediente__select" data-select>
                     <option value="acucar" class="ingrediente__option">Açucar</option>
                     <option value="acucarimpalpavel" class="ingrediente__option">Açucar impalpável</option>
                     <option value="amido" class="ingrediente__option">Amido de milho</option>
@@ -160,9 +162,18 @@
     <footer class="rodape">
         <h2 class="rodape__conteudo">Desenvolvido por <a href="mailto:leilanneq@gmail.com"> Leilanne Quirino</a></h2>
     </footer>
+    
     <script type="text/javascript" src="/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script type="module" src="/js/funcoes.js"></script>
     <script type="module" src="/js/conversor.js"></script> 
+    <script>
+        $(document).ready(function () {
+          $('#ingredientes').select2();
+        })
+      </script>
+    
     <!-- type=module para importar e receber função -->
 </body>
 </html>
