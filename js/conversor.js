@@ -153,7 +153,7 @@ function conversor() {
         
     
     } else if (selectEscolhido == "liquido"){ //LIQUIDO
-        let valorG = [200, 150, 250, 15, 10, 5, 2.5]
+        let valorG = [150, 200, 240, 15, 10, 5, 2.5]
         conversaoTela(inputIngrediente, valorG)
         // liquidoConverter(inputIngrediente)
   
